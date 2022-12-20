@@ -11,10 +11,7 @@ public class HomeController {
         return "home";
     }
     
-    @GetMapping("chat")
-    public String chat(){
-        return "chat";
-    }
+   
     @GetMapping("match")
     public String match(){
         return "match";
