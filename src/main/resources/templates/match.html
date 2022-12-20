@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" th:include="template :: modelo" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div th:fragment="conteudo">
+        <div class="shadow m-3 text-center p-5">
+            <div class="border border-dark"  style="width: 60%; margin: auto;">
+                <h5 class="border border-dark mt-3 mb-3 p-4 shadow" style="width: 600px; margin: auto;">Você deu um match com o livro de Rafael</h5>
+                    <div>
+                        <img th:src="livro.jpg " class="mb-4 border border-dark rounded" style="width: 30%">
+
+                    </div>
+                    <h5 class="border border-dark mt-3 mb-3 p-4 shadow" style="width: 500px; margin: auto;">Mochileiro das galáxias</h5>
+                    <h5><a href="/chat" class="btn btn-primary mb-3">Iniciar um chat</a></h5>
+            </div>
+        </div>
+
+        
+    </div>
+
+</body>
+</html>

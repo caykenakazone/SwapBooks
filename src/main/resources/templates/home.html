@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" th:include="template :: modelo">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div th:fragment="conteudo">
+        <div class="container-fluid text-center">
+            <div class="shadow container mb-3 mt-3">
+                <img th:src="livro.jpg"
+                    style="width: 350px; margin:40px 0px 20px 0px; border: 1px solid black; border-radius: 10px;">
+            </div>
+            <div class="shadow container" style="color: black;">
+                <h3 class="fs-1">Nome do Livro</h3>
+                <div class="container text-center" style="width:480px; padding: 20px;">
+                    <div class="row row-cols-2">
+                        <h4 class="col">Estado: Seminovo</h4>
+                        <h4 class="col">Nº Páginas</h4>
+                        <h4 class="col">Nome vendedor</h4>
+                        <h4 class="col">Localização</h4>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="p-4 shadow container mt-3 mb-3">
+                
+                <a href="">
+                    <img th:src="x.png" style="width:60px ;">
+
+                </a>
+                <a href="">
+                    <img th:src="recover.png" style="width:60px ;">
+                </a>
+                <a href="/match">
+                        <img th:src="ok.png" style="width:60px ;">
+                    
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

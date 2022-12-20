@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" th:include="template :: modelo">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div th:fragment="conteudo" style="padding: 80px; color: black;">
+        <div class="text-center mb-2 border rounded shadow container p-2 " style="color: white;margin: auto; width: 300px;">
+            <img th:src="chat.png" class=" img-thumbnail"style="width:30px ;" >
+            <span style="color: black; font-size: 20px;">Conversas</span>
+        </div>
+        <div class="container p-3">
+        <table class="table table-bordered mb-3 rounded shadow" style="color: black;">
+            <tr>    
+                <th scope="col">#</th>
+                <th scope="col">Conversas</th>
+                <th scope="col">Livro</th>
+                <th scope="col">Usuário</th>
+                
+            </tr>
+            <tr>
+                <tr>
+                    <th scope="col">1 <img th:src="default-profile.png" style="width:35px; border-radius:100% ;"></th>
+                    <th scope="col">Conversas</th>
+                    <th scope="col">Rafael</th>
+                    <th scope="col">rafa_123</th>
+                    <td scope="col">
+                        <button type="submit" class="btn btn-primary">Selecionar</button>
+                        <button type="submit" class="btn btn-primary ">Excluir</button>
+                    </td>
+                </tr>
+            </tr>
+            
+        </table>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

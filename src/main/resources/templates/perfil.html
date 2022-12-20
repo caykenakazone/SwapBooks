@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br" th:include="template :: modelo">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div th:fragment="conteudo" class="container ">
+        <div class="row" style="padding-top: 70px;">
+
+            <div class="col text-center" style="width:30%;">
+                <h2 class="pb-5">Foto de Perfil</h2>
+                <img th:src="default-profile.png" class="img-thumbnail rounded-circle shadow-4-strong"
+                    alt="Foto de perfil" style="width: 120px; height: 110px;">
+                    <div class="d-block text-center pt-5" >
+                        <button id="btn-foto" >Alterar foto</button>
+                    </div>
+            </div>
+
+            <div class="col-8" style="height: 680px;">
+                <h2 class="pb-5">Informações Pessoais</h2>
+                <form action="" class="row g-3 p-3 mb-5 rounded shadow " style="height:70%;">
+                    <div class="col-md-6">
+                        <label for="inp-nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" value="" id="inp-nome" >
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inp-tel" class="form-label">Telefone:</label>
+                        <input type="text" class="form-control" value="" id="inp-tel" >
+                    </div>
+                    <div class="col-md-12">
+                        <label for="inp-email" class="form-label">Email:</label>
+                        <input type="text" class="form-control" value="" id="inp-email" >
+                    </div>
+                    <div class="col-md-12">
+                        <label for="inp-tel" class="form-label">Localização:</label>
+                        <input type="text" class="form-control" value="" id="inp-loc" >
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inp-senha" class="form-label">Senha</label>
+                        <input type="password" class="form-control" value="" id="inp-senha" >
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button class="col-md-2">Editar</button>
+                        <button class="col-md-2" type="submit">Salvar Alterações</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

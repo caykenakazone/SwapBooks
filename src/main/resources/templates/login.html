@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" th:include="templateLC :: modeloLC">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div th:fragment="conteudoLC" style="background-color: rgb(101, 133, 90);padding: 120px; color: white;">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col lh-4">
+                    <p class="text-start"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe ea pariatur
+                        rem sunt harum iure
+                        repellat nesciunt quas. Officiis neque est debitis ullam natus voluptatum sint blanditiis!
+                        Cupiditate, quasi aliquid.</p>
+
+                    <img th:src="loginSemFundo.png" style="width: 600px; margin-left: -100px;">
+                </div>
+                <div class="col">
+                    <form>
+                        <img th:src="icon.png" style="width: 300px;">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" style="background-color: #ddd;">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Senha:</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                style="background-color: #ddd;">
+                        </div>
+
+                        <div class="text-center px-5">
+                            <button type="reset" class="btn btn-primary"
+                                style="margin-right:5px ; background-color: rgb(255, 255, 96); color: black; border: 2px solid rgb(255, 255, 96);">Limpar</button>
+                            <button type="submit" class="btn btn-primary"
+                                style="margin-left: 5px; background-color: rgb(255, 255, 96); color: black; border: 2px solid rgb(255, 255, 96);">Cadastrar</button>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

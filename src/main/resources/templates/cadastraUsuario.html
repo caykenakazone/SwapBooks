@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" th:include="templateLC :: modeloLC">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div th:fragment="conteudoLC" class="d-flex justify-content-center"
+        style="background-color: rgb(101, 133, 90); padding: 80px; color: white;">
+        <form action="/novo" method="post" th:object="${usuario}">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome Completo:</label>
+                <input type="text" th:field="*{nome}" class="form-control" id="" aria-describedby="emailHelp" style="background-color: #ddd;">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" th:field="*{email}" class="form-control" id="" aria-describedby="emailHelp" style="background-color: #ddd;">
+
+            </div>
+        
+        
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone:</label>
+                <input type="text"th:field="*{telefone}" class="form-control" id="" style="background-color: #ddd;">
+            </div>
+            <div class="mb-3">
+                <label for="localizacao" class="form-label">Cidade:</label>
+                <input type="text" th:field="*{localizacao}" class="form-control" id="" style="background-color: #ddd;">
+            </div>
+
+            <div class="text-center px-5">
+                <button type="reset" class="btn btn-primary" style="margin-right:5px ; background-color: rgb(255, 255, 96); color: black; border: 2px solid rgb(255, 255, 96);">Limpar</button>
+                <button type="submit" class="btn btn-primary" style="margin-left: 5px; background-color: rgb(255, 255, 96); color: black; border: 2px solid rgb(255, 255, 96);">Cadastrar</button>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
