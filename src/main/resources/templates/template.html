@@ -8,10 +8,12 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        
     <style>
+         @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
         * {
             margin: 0px;
-
+            font-family: 'M PLUS 1p', sans-serif;
             box-sizing: border-box;
         }
 
@@ -32,6 +34,8 @@
         .icon {
             width: 80px;
         }
+        
+
     </style>
 </head>
 
@@ -42,9 +46,9 @@
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand text-center fs-2 fw-bold" href="#">Swap Books</a>
+            <a class="navbar-brand text-center fs-2 fw-bold" href="#">Page Swap</a>
             <div>
-                <a href="home" class="navbar-brand px-4"><img th:src="@{icon.png}" class="img-thumbnail"></a>
+                <a href="home" class="navbar-brand px-4"><img th:src="@{icon.png}"></a>
             </div>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
@@ -80,7 +84,7 @@
 
     <div th:replace="this :: conteudo" class="navbar px-10" style="margin-top: 300px"></div>
 
-    <footer class="text-center p-4">Direiros Reservados</footer>
+    <footer class="text-center p-4">Direitos Reservados</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
