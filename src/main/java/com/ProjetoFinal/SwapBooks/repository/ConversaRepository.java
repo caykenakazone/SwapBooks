@@ -1,5 +1,7 @@
 package com.ProjetoFinal.SwapBooks.repository;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +20,10 @@ public class ConversaRepository {
         return jdbc.query("select texto from conversa",(registro,contador)->{
             Conversa cv = new Conversa();
             cv.setTexto(registro.getLong("texto"));
+
             return cv;
         });
     }
+   
     
 }
