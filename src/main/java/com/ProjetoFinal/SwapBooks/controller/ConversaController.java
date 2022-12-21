@@ -24,9 +24,7 @@ public class ConversaController {
     }
 
     @GetMapping("/conversa")
-    public String relatorio(Model model){
-        List<Conversa> lista = convRepo.findAll();
-       model.addAttribute("conversa",lista);
+    public String relatorio(){
        return "conversa";
     }
     

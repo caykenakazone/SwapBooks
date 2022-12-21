@@ -16,14 +16,6 @@ public class ConversaRepository {
     @Autowired
     JdbcTemplate jdbc;
 
-    public List<Conversa> findAll(){
-        return jdbc.query("select texto from conversa",(registro,contador)->{
-            Conversa cv = new Conversa();
-            cv.setTexto(registro.getLong("texto"));
-
-            return cv;
-        });
-    }
    
     
 }
