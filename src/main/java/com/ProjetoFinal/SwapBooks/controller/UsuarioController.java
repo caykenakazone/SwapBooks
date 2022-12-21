@@ -20,7 +20,7 @@ public class UsuarioController {
         return "cadastraUsuario";
     }
 
-    @PostMapping("cadastraUsuario")
+    @PostMapping("novo")
     public String gravaDados(Usuario usuario) {
         repository.save(usuario);
         return "home";

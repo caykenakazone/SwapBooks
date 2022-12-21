@@ -12,10 +12,9 @@ public class UsuarioRepository {
     JdbcTemplate jdbc;
 
     public void save(Usuario usuario) {
-        String sql = "insert into usuario(nome,email,foto,telefone,localizacao) values(?,?,?,?,?);";
+        String sql = "insert into usuario(nome,email,telefone,localizacao) values(?,?,?,?);";
         jdbc.update(sql, usuario.getNome(), usuario.getEmail(), usuario.getFoto(), usuario.getTelefone(),
                 usuario.getLocalizacao());
-
     }
 
     public Usuario buscaPorId(Integer cod) {
