@@ -9,7 +9,7 @@ import com.ProjetoFinal.SwapBooks.model.Livro;
 import com.ProjetoFinal.SwapBooks.repository.LivroRepository;
 
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+
 import org.springframework.web.bind.annotation.RequestParam;
 
 
