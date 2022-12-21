@@ -8,12 +8,87 @@
 </head>
 <body>
     <div th:fragment="conteudo">
-        <table>
-            <th scope="col">Conversa</th>
-            <tr th:each="con : ${conversa}">
-                <td th:text=""${con.texto}></td>
-            </tr>
-        </table>
+        <section style="background-color: rgb(186, 186, 186);">
+            <div class="container py-5 border shadow" style="background-color: #ffffff;">
+          
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-8 col-lg-6 col-xl-4 border shadow m-0">
+                        <div class="p-2" style="margin: auto;">
+                            <p style="text-align: center;">Conversa com Rafael</p>
+                        </div>                 
+                        <div class="divider d-flex align-items-center mb-4">
+                          <p class="text-center mx-3 mb-0" style="color: #a2aab7;">Hoje</p>
+                        </div>
+          
+                        <div class="d-flex flex-row justify-content-end mb-4 pt-1">
+                          <div>
+                            <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-success">Olá, tudo bem?</p>
+                            <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-success">Gostou do livro?</p>
+    
+                            <p class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end">14:38</p>
+                          </div>
+                          <img src="https://cdn.discordapp.com/attachments/970012790867775538/1055177425052508170/istockphoto-1311084168-170667a.jpg"
+                            alt="avatar 1" style="width: 45px; height: 100%; border-radius: 60%;">
+                        </div>
+          
+                        <div class="d-flex flex-row justify-content-start mb-4">
+                          <img src="https://cdn.discordapp.com/attachments/970012790867775538/1055177461958184970/istockphoto-1300512215-170667a.jpg"
+                            alt="avatar 1" style="width: 45px; height: 100%;border-radius: 60%;">
+                          <div>
+                            <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">Opa,gostei sim</p>
+                            <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">Podemos marcar de fazer a troca?</p>
+                            <p class="small ms-3 mb-3 rounded-3 text-muted">14:41</p>
+                          </div>
+                        </div>
+          
+                        <div class="d-flex flex-row justify-content-end mb-4">
+                          <div>
+                            <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-success">Claro!</p>
+                            <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-success">O que você acha de marcamos quarta-feira no shooping?</p>
+                            <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-success">Tenho a tarde toda livre</p>
+                            <p class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end">14:45</p>
+                          </div>
+                          <img src="https://cdn.discordapp.com/attachments/970012790867775538/1055177425052508170/istockphoto-1311084168-170667a.jpg"
+                            alt="avatar 1" style="width: 45px; height: 100%;border-radius: 60%;">
+                        </div>
+          
+                        <div class="d-flex flex-row justify-content-start mb-4">
+                          <img src="https://cdn.discordapp.com/attachments/970012790867775538/1055177461958184970/istockphoto-1300512215-170667a.jpg"
+                            alt="avatar 1" style="width: 45px; height: 100%;border-radius: 60%;">
+                          <div>
+                            <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">Pode ser, te encontro lá, por volta das 15:00, ok?</p>
+                            <p class="small ms-3 mb-3 rounded-3 text-muted">14:46</p>
+                          </div>
+                        </div>
+          
+                        <div class="d-flex flex-row justify-content-end mb-4">
+                          <div>
+                            <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-success">Ok, marcado então</p>
+                            <p class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end">14:49</p>
+                          </div>
+                          <img src="https://cdn.discordapp.com/attachments/970012790867775538/1055177425052508170/istockphoto-1311084168-170667a.jpg"
+                            alt="avatar 1" style="width: 45px; height: 100%;border-radius: 60%;">
+                        </div>
+          
+                      <div class="card-footer text-muted d-flex justify-content-start align-items-center p-3">
+                        <img src="https://cdn.discordapp.com/attachments/970012790867775538/1055177461958184970/istockphoto-1300512215-170667a.jpg"
+                          alt="avatar 3" style="width: 50px; height: 100%;border-radius: 100%;">
+                        <input type="text" class="form-control form-control-lg" id="exampleFormControlInput3"
+                          placeholder="Escrever mensagem">
+                        <a class="ms-1 text-muted" href="#!"><i class="fas fa-paperclip"></i></a>
+                        <a class="ms-3 text-muted" href="#!"><i class="fas fa-smile"></i></a>
+                        <a class="ms-3 link-info" href="#!"><i class="fas fa-paper-plane"></i></a>
+                        <a href="" class="btn bg-success text-white">Enviar</a>
+                      </div>
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+          
+            </div>
+          </section>
+        
     </div>
 </body>
 </html>

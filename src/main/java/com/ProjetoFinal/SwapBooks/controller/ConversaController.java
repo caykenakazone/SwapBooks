@@ -9,7 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.ProjetoFinal.SwapBooks.model.Conversa;
 import com.ProjetoFinal.SwapBooks.repository.ConversaRepository;
 
 @Controller
@@ -23,11 +22,16 @@ public class ConversaController {
         return "chat";
     }
 
+    // @GetMapping("/conversa")
+    // public String relatorio(Model model){
+    //     List<Conversa> lista = convRepo.findAll();
+    //    model.addAttribute("conversa",convRepo.findAll());
+    //    return "conversa";
+    // }
     @GetMapping("/conversa")
     public String relatorio(){
        return "conversa";
     }
-    
 
 
 }
