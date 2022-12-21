@@ -8,7 +8,11 @@
 </head>
 <body>
     <div th:fragment="conteudo">
-
+        <table>
+            <tr th:each="con : ${conversa}">
+                <td th:text=""${con.texto}></td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>

@@ -10,7 +10,10 @@ public class ChatController {
     public String home(){
         return "chat";
     }
-    
+    @GetMapping("/conversa")
+    public String conversa(){
+        return "conversa";
+    }
     
 
 
