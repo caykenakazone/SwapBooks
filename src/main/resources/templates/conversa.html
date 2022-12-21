@@ -9,6 +9,7 @@
 <body>
     <div th:fragment="conteudo">
         <table>
+            <th scope="col">Conversa</th>
             <tr th:each="con : ${conversa}">
                 <td th:text=""${con.texto}></td>
             </tr>
