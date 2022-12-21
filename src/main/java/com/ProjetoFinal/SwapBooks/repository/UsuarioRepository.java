@@ -13,7 +13,7 @@ public class UsuarioRepository {
 
     public void save(Usuario usuario) {
         String sql = "insert into usuario(nome,email,telefone,localizacao) values(?,?,?,?);";
-        jdbc.update(sql, usuario.getNome(), usuario.getEmail(), usuario.getFoto(), usuario.getTelefone(),
+        jdbc.update(sql, usuario.getNome(), usuario.getEmail(), usuario.getTelefone(),
                 usuario.getLocalizacao());
     }
 
@@ -24,7 +24,6 @@ public class UsuarioRepository {
                     Usuario u = new Usuario();
                     u.setNome(rs.getString("nome"));
                     u.setEmail(rs.getString("email"));
-                    u.setFoto(rs.getString("foto"));
                     u.setTelefone(rs.getString("telefone"));
                     u.setLocalizacao(rs.getString("localizacao"));
                     return u;
@@ -32,10 +31,9 @@ public class UsuarioRepository {
     }
 
     public void atualiza(Usuario usuario) {
-        jdbc.update("update usuario set nome=?,email=?,foto=?,telefone=?,localizacao=?",
+        jdbc.update("update usuario set nome=?,email=?,telefone=?,localizacao=?",
                 usuario.getNome(),
                 usuario.getEmail(),
-                usuario.getFoto(),
                 usuario.getTelefone(),
                 usuario.getLocalizacao());
     }
